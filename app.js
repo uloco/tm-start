@@ -2,5 +2,8 @@
 
 const { exec } = require('child_process');
 
-exec('http-server /home/pi/dynd/dynd-app-frontend/dist', {stdio: 'inherit'})
-// exec('/usr/bin/chromium-browser --kiosk --disable-restore-session-state "http://localhost:8080"', {stdio: 'inherit'})
+const run = (cmd) => exec(cmd, {stdio: 'inherit'})
+
+run('http-server /home/pi/dynd/dynd-app-frontend/dist')
+process.chdir('/home/pi/dynd/dynd-app-backend')
+run('npm start')
