@@ -1,0 +1,6 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@point-rpi
+
+@/usr/bin/chromium-browser --kiosk --incognito --force-device-scale-factor=0.9 --disable-restore-session-state http://localhost:8080

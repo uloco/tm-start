@@ -12,4 +12,3 @@ Add following line to `/etc/rc.local` (before `exit 0`)
 * Start backend 
 * (optimize start up speed?)
 
-# tm-start
