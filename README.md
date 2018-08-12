@@ -12,3 +12,7 @@ Add following line to `/etc/rc.local` (before `exit 0`)
 * Start backend 
 * (optimize start up speed?)
 
+## Splashscreen
+sudo apt install fbi
+`/usr/bin/fbi -T 1 -noverbose -a /etc/tm-splash.png`
+
